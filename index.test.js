@@ -1,7 +1,7 @@
 'use strict'
 
 const tap = require('tap')
-const { BerReader, BerWriter } = require('@ldapjs/asn1')
+const { BerReader } = require('@ldapjs/asn1')
 const Attribute = require('@ldapjs/attribute')
 const Change = require('./index')
 
