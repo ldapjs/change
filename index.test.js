@@ -321,8 +321,7 @@ tap.test('#isChange', t => {
       modification: {
         type: '',
         values: []
-      },
-      toBer () {}
+      }
     }
     t.equal(Change.isChange(change), true)
 
@@ -334,7 +333,7 @@ tap.test('#isChange', t => {
   t.test('false for shape mis-match', async t => {
     const change = {
       operation: 'add',
-      modification: {
+      mod: {
         type: '',
         values: []
       }

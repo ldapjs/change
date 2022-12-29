@@ -257,8 +257,7 @@ class Change {
     }
     if (
       Attribute.isAttribute(change.modification) === true &&
-      (typeof change.operation === 'string' || typeof change.operation === 'number') &&
-      typeof change.toBer === 'function'
+      (typeof change.operation === 'string' || typeof change.operation === 'number')
     ) {
       return true
     }
