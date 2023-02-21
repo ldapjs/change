@@ -12,11 +12,15 @@ class Change {
   #modification
 
   /**
-   * @param {object} input
-   * @param {string|number} operation One of `add` (0), `delete` (1), or
+   * @typedef {object} ChangeParameters
+   * @property {string | number} operation One of `add` (0), `delete` (1), or
    * `replace` (2). Default: `add`.
-   * @param {object|import('@ldapjs/attribute')} modification An attribute
+   * @property {object | import('@ldapjs/attribute')} modification An attribute
    * instance or an object that is shaped like an attribute.
+   */
+
+  /**
+   * @param {ChangeParameters} input
    *
    * @throws When the `modification` parameter is invalid.
    */
@@ -98,6 +102,10 @@ class Change {
    * @throws When the `op` is not recognized.
    */
   set operation (op) {
+    if (typeof op === 'string') {
+      op = op.toLowerCase()
+    }
+
     switch (op) {
       case 0x00:
       case 'add': {

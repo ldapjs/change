@@ -103,6 +103,9 @@ tap.test('.operation', t => {
     t.equal(change.operation, 'replace')
     change.operation = 'replace'
     t.equal(change.operation, 'replace')
+
+    change.operation = 'Replace'
+    t.equal(change.operation, 'replace')
   })
 
   t.end()
