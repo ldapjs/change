@@ -15,8 +15,8 @@
   },
   "main": "index.js",
   "dependencies": {
-    "@ldapjs/asn1": "2.0.0-rc.3",
-    "@ldapjs/attribute": "1.0.0-rc.4"
+    "@ldapjs/asn1": "2.0.0",
+    "@ldapjs/attribute": "1.0.0"
   },
   "devDependencies": {
     "@fastify/pre-commit": "^2.0.2",
