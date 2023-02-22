@@ -7,7 +7,7 @@
   "name": "@ldapjs/change",
   "homepage": "https://github.com/ldapjs/change",
   "description": "API for handling LDAP change objects",
-  "version": "1.0.0-rc.3",
+  "version": "1.0.0",
   "license": "MIT",
   "repository": {
     "type": "git",
